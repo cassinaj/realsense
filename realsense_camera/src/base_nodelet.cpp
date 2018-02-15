@@ -280,6 +280,9 @@ namespace realsense_camera
         rs_get_device_serial(rs_device_, &rs_error_) <<
         ", USB Port ID: " << rs_get_device_usb_port_id(rs_device_, &rs_error_));
     checkError();
+
+    ROS_INFO("CUSTOM NVIDIA NODE RUNNING...");
+
     return true;
   }
 
